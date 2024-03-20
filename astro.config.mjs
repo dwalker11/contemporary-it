@@ -1,9 +1,11 @@
-import { defineConfig } from 'astro/config';
-import tailwind from '@astrojs/tailwind';
-import compress from 'astro-compress';
+import { defineConfig } from "astro/config";
+import tailwind from "@astrojs/tailwind";
+import compress from "astro-compress";
 
 // https://astro.build/config
 export default defineConfig({
+  base: "/contemporary-it",
+  trailingSlash: "always",
   experimental: {
     viewTransitions: true,
   },

@@ -1,13 +1,9 @@
 ---
+const url = import.meta.env.BASE_URL
 const bottomLinks = [
   {
     header: 'Social',
     links: [
-      {
-        name: 'Github',
-        href: 'https://github.com/',
-        isExternal: true,
-      },
       {
         name: 'Twitter',
         href: 'https://twitter.com/',
@@ -30,22 +26,12 @@ const bottomLinks = [
     links: [
       {
         name: 'Home',
-        href: '/',
+        href: url,
         isExternal: false,
       },
       {
         name: 'About',
-        href: '/about',
-        isExternal: false,
-      },
-      {
-        name: 'Pricing',
-        href: '/pricing',
-        isExternal: false,
-      },
-      {
-        name: 'Contact',
-        href: '/contact',
+        href: url + 'about/',
         isExternal: false,
       },
     ],
@@ -55,17 +41,7 @@ const bottomLinks = [
     links: [
       {
         name: 'Privacy',
-        href: '/privacy',
-        isExternal: false,
-      },
-      {
-        name: '404',
-        href: '/404',
-        isExternal: false,
-      },
-      {
-        name: 'Styleguide',
-        href: '/styleguide',
+        href: url + 'privacy/',
         isExternal: false,
       },
     ],
