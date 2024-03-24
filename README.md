@@ -94,4 +94,3 @@ If you have any questions or suggestions do not hesitate to contact me.
 ## License
 
 This project is licensed under the terms of the MIT license.
-
