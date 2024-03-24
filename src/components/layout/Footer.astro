@@ -1,5 +1,5 @@
 ---
-const url = import.meta.env.BASE_URL
+const base_url = import.meta.env.BASE_URL
 const bottomLinks = [
   {
     header: 'Social',
@@ -26,12 +26,12 @@ const bottomLinks = [
     links: [
       {
         name: 'Home',
-        href: url,
+        href: base_url,
         isExternal: false,
       },
       {
         name: 'About',
-        href: url + 'about/',
+        href: base_url + 'about/',
         isExternal: false,
       },
     ],
@@ -41,7 +41,7 @@ const bottomLinks = [
     links: [
       {
         name: 'Privacy',
-        href: url + 'privacy/',
+        href: base_url + 'privacy/',
         isExternal: false,
       },
     ],
@@ -61,7 +61,7 @@ const bottomLinks = [
           class="h-8 w-auto"
           width="65"
           height="40"
-          :src="$store.theme.isDark ? '/assets/logo-inverted.svg' : '/assets/logo.svg'"
+          :src=`$store.theme.isDark ? '${base_url}assets/logo-inverted.svg' : '${base_url}assets/logo.svg'`
           alt="ContemporaryIT"
         />
         <!-- <p class="text-primary-950/70 dark:text-primary-200/70 text-base"> -->
